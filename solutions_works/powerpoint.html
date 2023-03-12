@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Powerpoint</title>
+    <link rel="stylesheet" href="powerpoint.css">
+    <link rel="stylesheet" href="java.js">
+    <link rel="stylesheet" href=
+    "https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" />
+    
+</head>
+<body>
+    <header>
+        <div class="onglets">
+            <nav>
+            <a class="link" href="solutionsworks.html"> Menu</a>
+           <a class="link" href="nos_préstations.html">Nos autres prestations</a>
+                </nav>
+        </div>
+
+    </header>
+<h1>Powerpoint</h1>
+<p>20 frs</p>
+<p id="texte">Nous faisons pour vous des templates de powerpoints, le nombres de slides désirés, le code couleurs et l’ambiance selon laquelle vous voulez</p>
+<div class="container" align="center">
+    <a href="boutique.html">
+        <button type="button" 
+            class="btn btn-default btn-sm" <i onclick="addToCart('Powerpoint', 20)">
+            <span class="glyphicon 
+                glyphicon-shopping-cart">
+            </span>
+            <b> Ajouter au panier </b>
+        </button> 
+    </a>
+</div>
+<script>
+    function addToCart(item, price) {
+      let cart = JSON.parse(localStorage.getItem('cart')) || [];
+      cart.push({ item, price });
+      localStorage.setItem('cart', JSON.stringify(cart));
+      alert(`${item} a été ajouté au panier.`);
+    }
+  </script>
+<nav class= suite »>
+    <a href="solutionsworks.html" »>Menu</a> > <a href="nos_préstations.html" »>Prestations</a> > <span>Powerpoint</span>
+    </nav> 
+<footer>
+    <p> Contactez-nous:
+        solutions.works23@gmail.com</p>
+    <div class="social-media"></div>
+
+
+    <a id="myInstagramLink" href="https://www.instagram.com/solutionsworks/" >
+        <i class="fa fa-instagram"></i>
+    </a>
+
+</footer>
+</body>
+</html>

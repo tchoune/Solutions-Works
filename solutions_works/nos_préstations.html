@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>préstation</title>
+    <link rel="stylesheet" href="prestation.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fontawesome.com/icons/trash?s=light&f=classic">
+    <link rel="stylesheet" href="https://fontawesome.com/icons/x?s=solid&f=classic">
+    <link rel="stylesheet" href="java.js">
+</head>
+<body>
+    <header>
+    <nav>
+        <div class="onglets">
+            <nav>
+            <a  href="solutionsworks.html"> Menu</a>
+           <a  href="notre histoire.html">Notre histoire</a>
+               
+                <form>
+                    <input type="search" placeholder="Rechercher">
+                </form>
+     
+                <a href="boutique.html">
+                <i id="cadi"class="fas fa-shopping-cart"></i></a>
+        </div></nav>
+    </header>
+        <!--Shop-->
+        <section class="shop container">
+          <h2 class="section-title"> Nos prestations</h2> 
+          <!--Content--> 
+          <div class="shop-content">
+          <!--product1-->
+          
+          <div class="product-box">
+           <a href="curriculumvitae.html"> <img src="image/cv (1).png" alt="cv" class="product-img">
+            <h2 class="product title">Curriculum vitae</h2></a>
+            <span class="price"> 15 CHF</span></i>
+            <i class="fas fa-shopping-cart" onclick="addToCart('Curriculum vitae', 15)"></i>
+          </div>  
+           <!--product2-->
+           <div class="product-box">
+            <a href="powerpoint.html"> <img src="image/powerpoint.png" alt="powerpoint" class="product-img">
+             <h2 class="product title">Powerpoint</h2></a>
+             <span class="price"> 20 CHF</span></i>
+             <i class="fas fa-shopping-cart" onclick="addToCart('Powerpoint', 20)"></i>
+          </div>   
+          <!--product3-->
+          <div class="product-box">
+            <a href="retranscription.html"> <img src="image/voice-message.png" alt="Retranscription" class="product-img">
+             <h2 class="product title">Retranscription</h2></a>
+             <span class="price"> 10 CHF</span></i>
+             <i class="fas fa-shopping-cart" onclick="addToCart('Retranscription', 10)"></i> 
+        </section>  
+        
+    <script>
+      function addToCart(item, price) {
+        let cart = JSON.parse(localStorage.getItem('cart')) || [];
+        cart.push({ item, price });
+        localStorage.setItem('cart', JSON.stringify(cart));
+        alert(`${item} a été ajouté au panier.`);
+      }
+    </script>
+  </body>
+</html>
+
+    <footer>
+        <p> Contactez-nous:
+            solutions.works23@gmail.com</p>
+        <div class="social-media"></div>
+
+
+        <a id="myInstagramLink" href="https://www.instagram.com/solutionsworks/" >
+            <i class="fa fa-instagram"></i>
+        </a>
+
+    </footer>
+</body>
+</html>

@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+header{ display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    background-color:  #f2ece9;
+    height: 100px;}
+
+    nav a{text-decoration: none;
+        font-family: 'Dancing Script', cursive;
+        color: rgb(94, 107, 113);
+    }
+    a{padding:10px;
+    }
+    h2{font-family: 'Merriweather', serif;}
+    p{font-family: 'Roboto', sans-serif;}
+    
+
+    header{ display: flex;
+        justify-content: center;
+        flex-direction: row;
+        align-items: center;
+        height: 100px;
+    background:url(image/solutionsworks.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: right;
+        height: 60px;}
+
+nav a {
+    text-decoration: none;
+    font-family: 'Dancing Script';
+    color: rgb(94, 107, 113);
+    font-size: 20px;
+}
+
+a {
+    padding: 10px;
+    font-size: 18px;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #fff;
+    position: sticky;
+    top: 0;
+}
+
+nav h1 {
+    font-size: 20px;
+}
+
+nav .onglets {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+nav .onglets p {
+    font-size: 17px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+nav .onglets input {
+    margin: 8px 20px;
+    padding: 15px;
+    border-radius: 30px;
+    border: none;
+    background-color: #f2f2f2;
+    outline: none;
+}
+
+footer {
+    margin-top: 100px;
+    background-color: #000;
+    padding: 30px;
+    color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+footer .social-media {
+    display: flex;
+}
+
+footer .social-media p {
+    margin-right: 15px;
+    border: 1px solid #fff;
+    border-radius: 100%;
+    padding: 5px;
+    text-align: center;
+    width: 20px;
+    cursor: pointer;
+}
+
+
+#myInstagramLink { 
+    color: white;
+    font-size: 42px;
+}
+.cart-box{
+    display: grid;
+    grid-template-columns: 32% 50% 18%;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+.cart-img{
+    height: 200px;
+    object-fit: contain;
+    padding: 10px;
+}
+.detail-box{
+    display: grid;
+    row-gap: 0.5rem;
+}
+.cart-product-title{
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+.cart-price{
+    font-weight: 500;
+}
+.cart-quantity{
+    border: 1px solid rgb(172, 163, 145);
+    outline-color: rgb(160, 145, 127);
+    width: 2.4rem;
+    text-align: center;
+    font-size: 1rem;
+}
+.cart-remove{
+    font-size: 24px;
+    color: #c5bdbb;
+    cursor: pointer;
+}
+.total{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 1.5rem ;
+    border-top: 1px solid aliceblue; 
+}
+.total-title{
+    font-size: 1rem;
+    font-weight: 600;
+}
+.total-price{
+    margin-left: 0.5rem;
+}
+.btn-buy{
+    display: flex;
+    margin: 1.5rem auto 0 auto;
+    padding: 12px 20px;
+    border: none;
+    background: rgb(56, 47, 43);
+    color: white;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+.btn-buy:hover{
+    background: rgb(167, 167, 167);
+}
+#close-cart{
+    position: absolute;
+    top: 1rem ;
+    right: 0.8rem;
+    font-size: 2rem;
+    color:antiquewhite;
+    cursor: pointer;
+}
+.cart.active{
+    right: 0;
+}
+a{
+    text-decoration: none;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+button{
+    background-color: #515151; /* Grey */
+    border-radius: 10px;
+    color: white;
+    padding: 12px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px; 
+}
+footer {
+    margin-top: 100px;
+    background-color: #000;
+    padding: 30px;
+    color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+footer .social-media {
+    display: flex;
+}
+
+footer .social-media p {
+    margin-right: 15px;
+    border: 1px solid #fff;
+    border-radius: 100%;
+    padding: 5px;
+    text-align: center;
+    width: 20px;
+    cursor: pointer;
+}
+
+
+#myInstagramLink { 
+    color: white;
+    font-size: 42px;
+}

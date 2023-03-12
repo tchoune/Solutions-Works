@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200&display=swap');
+
+body {
+    text-align: center;
+    background-color: white;
+}
+
+h1 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 40px;
+    color: rgb(41, 37, 39)
+}
+
+h2 {
+    font-size: 20px;
+    font-family: 'Dosis', sans-serif;
+}
+
+h3{
+    font-size: 18px;
+    font-family: 'Dosis', sans-serif;
+}
+
+header{ display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    height: 100px;
+
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right;
+    height: 60px;}
+
+nav a{text-decoration: none;
+    font-family: 'Dancing Script', cursive;
+    color: rgb(94, 107, 113);
+}
+
+
+nav a {
+text-decoration: none;
+font-family: 'Dancing Script', cursive;
+color: rgb(94, 107, 113);
+font-size: 20px;
+display: flex;
+flex-direction: column;
+text-align: center;
+
+}
+
+a {
+padding: 10px;
+font-size: 18px;
+}
+
+nav {
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+padding: 20px;
+position: sticky;
+top: 0;
+}
+
+nav h1 {
+font-size: 20px;
+}
+
+nav .onglets {
+display: flex;
+flex-wrap: wrap;
+}
+
+nav .onglets p {
+font-size: 17px;
+margin-right: 10px;
+cursor: pointer;
+}
+
+nav .onglets input {
+margin: 8px 20px;
+padding: 15px;
+border-radius: 30px;
+border: none;
+background-color: #f2f2f2;
+outline: none;
+}
+
+footer {
+    margin-top: 100px;
+    background-color: #000;
+    padding: 30px;
+    color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+footer .social-media {
+    display: flex;
+}
+
+footer .social-media p {
+    margin-right: 15px;
+    border: 1px solid #fff;
+    border-radius: 100%;
+    padding: 5px;
+    text-align: center;
+    width: 20px;
+    cursor: pointer;
+}
+
+
+#myInstagramLink { 
+    color: white;
+    font-size: 42px;
+}

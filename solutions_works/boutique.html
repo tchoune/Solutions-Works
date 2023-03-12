@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>boutique</title>
+    <link rel="stylesheet" href="boutique.css">
+    <link rel="stylesheet" href="https://fontawesome.com/icons/x?s=duotone&f=classic">
+</head>
+<body>
+    <nav>
+        <div class="onglets">
+            <nav><a class="link" href="nos_préstations.html">Nos préstations</a>
+                <a class="link" href="notre histoire.html">Qui sommes nous ?</a>
+        </div>
+    </nav>
+    <!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Votre panier</title>
+  </head>
+  <body>
+    <h1>Votre Panier</h1>
+    <ul id="cart-items">
+      <!-- Cart items will be dynamically added here -->
+    </ul>
+    <p>Prix total: CHF<span id="total-price">0</span></p>
+    <button onclick="clearCart()">Supprimer les articles</button>
+    <a href="nos_préstations.html">Nos prestations</a>
+    <script>
+      let cart = JSON.parse(localStorage.getItem('cart')) || [];
+      let cartItems = document.getElementById('cart-items');
+      let totalPrice = document.getElementById('total-price');
+      
+      let total = 0;
+      for (let item of cart) {
+        let li = document.createElement('li');
+        li.textContent = `${item.item} - $${item.price}`;
+        cartItems.appendChild(li);
+        total += item.price;
+      }
+      
+      totalPrice.textContent = total;
+      
+      function clearCart() {
+        localStorage.removeItem('cart');
+        cartItems.innerHTML = '';
+        totalPrice.textContent = 0;
+      }
+    </script>
+  </body>
+</html>
+ <footer>
+        <p> Contactez-nous:
+            solutions.works23@gmail.com</p>
+        <div class="social-media"></div>
+
+
+        <a id="myInstagramLink" href="https://www.instagram.com/solutionsworks/" >
+            <i class="fa fa-instagram"></i>
+        </a>
+
+    </footer>
+</body>
+</html>

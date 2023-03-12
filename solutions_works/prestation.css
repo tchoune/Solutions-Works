@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap');
+header{ display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    height: 100px;
+background:url(image/solutionsworks.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right;
+    height: 60px;}
+
+    nav a{text-decoration: none;
+        font-family: 'Dancing Script', cursive;
+        color: rgb(94, 107, 113);
+    }
+    
+    
+nav a {
+    text-decoration: none;
+    font-family: 'Dancing Script', cursive;
+    color: rgb(94, 107, 113);
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+a {
+    padding: 10px;
+    font-size: 18px;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+    position: sticky;
+    top: 0;
+}
+
+nav h1 {
+    font-size: 20px;
+}
+
+nav .onglets {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+nav .onglets p {
+    font-size: 17px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+nav .onglets input {
+    margin: 8px 20px;
+    padding: 15px;
+    border-radius: 30px;
+    border: none;
+    background-color: #f2f2f2;
+    outline: none;
+}
+
+footer {
+    margin-top: 70px;
+    background-color: #000;
+    padding: 30px;
+    color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+footer .social-media {
+    display: flex;
+}
+
+footer .social-media p {
+    margin-right: 15px;
+    border: 1px solid #fff;
+    border-radius: 100%;
+    padding: 5px;
+    text-align: center;
+    width: 20px;
+    cursor: pointer;
+}
+
+#cadi{
+    padding: 50px;
+    margin-left: 60px;
+    margin-right: -120px;
+}
+#cadi:hover{
+    background-color: white;
+    color: #000;
+}
+#myInstagramLink { 
+    color: white;
+    font-size: 42px;
+}
+.link:hover{font-size: 26px;}
+section{
+    padding: 4rem 0 3rem;
+    font-family: 'Dancing Script', cursive;
+}
+.section-title{font-size: 2rem;
+font-weight:600 ;
+text-align: center;
+margin-bottom: 1.5rem;
+font-family: 'Source Sans Pro', sans-serif;;}
+.shop-content{
+    display:grid;
+    display: flex;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(220px, auto)) ;
+    gap: 1.5rem;
+
+}
+.product-box{
+    position: relative;
+}
+.product-img:hover{
+    padding: 10px;
+    border: 1px solid var(--text-color);
+    transition: 0.4s;
+}
+
+.product-img{
+height: 250px;
+margin-bottom: 0.5rem;
+margin-right: 60px;
+margin-left: 60px;}
+
+.product-title{font-size: 1.1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+}
+.price{font-weight:500;}
+.fa-shopping-cart{
+    position: absolute;
+    bottom: 0;
+    right: 70px;
+    background: var(--text-color);
+    color:var(--text-color) ;
+    padding: 10px;
+    cursor: pointer ;
+}
+.fa-shopping-cart:hover{background: hsl(249,32% , 17%);
+color: white;}
+.cart{ position: fixed;
+top: 0;
+right: 0;
+width: 360px;
+min-height: 100vh;
+padding: 20px;
+background: var(--bg-color);
+box-shadow: -2px 0 4px hsl(0 4% 15% / 10%);
+}
+.cart-title{
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
+    margin-top: 2rem;
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
